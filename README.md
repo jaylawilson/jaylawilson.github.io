@@ -1,2 +1,2 @@
 # jaylawilson.github.io
-Jayla Wilson's Information Systems portfolio
+Jayla Wilson's Information Systems Portfolio
