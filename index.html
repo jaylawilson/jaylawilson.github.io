@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jayla Wilson | Information Systems Student</title>
+    <title>Jayla Wilson | Information Systems</title>
 
     <meta
         name="description"
-        content="Jayla Wilson is an Information Systems student at Houston Christian University interested in IT, data analytics, business intelligence, and software development."
+        content="Jayla Wilson - Information Systems student at Houston Christian University."
     >
 
     <style>
@@ -21,7 +21,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f7f9fc;
+            background: #f6f8fc;
             color: #172033;
             line-height: 1.6;
         }
@@ -36,15 +36,14 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.97);
+            background: #ffffff;
             border-bottom: 1px solid #e5e9f0;
-            backdrop-filter: blur(10px);
         }
 
         .nav-container {
             max-width: 1100px;
             margin: auto;
-            padding: 18px 24px;
+            padding: 18px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,9 +51,8 @@
 
         .logo {
             font-size: 21px;
-            font-weight: 700;
+            font-weight: 800;
             color: #14213d;
-            letter-spacing: 0.5px;
         }
 
         .nav-links {
@@ -64,10 +62,9 @@
         }
 
         .nav-links a {
-            color: #465268;
+            color: #4d596c;
             font-size: 14px;
             font-weight: 600;
-            transition: 0.2s;
         }
 
         .nav-links a:hover {
@@ -77,8 +74,8 @@
         /* HERO */
 
         .hero {
-            background: linear-gradient(135deg, #eef4ff 0%, #ffffff 55%, #f5f8ff 100%);
-            min-height: 620px;
+            background: linear-gradient(135deg, #edf4ff, #ffffff);
+            min-height: 610px;
             display: flex;
             align-items: center;
         }
@@ -87,33 +84,33 @@
             max-width: 1100px;
             width: 100%;
             margin: auto;
-            padding: 90px 24px;
+            padding: 90px 25px;
         }
 
-        .hero-tag {
+        .hero-label {
             display: inline-block;
-            padding: 7px 13px;
             background: #e4edff;
             color: #2457b8;
+            padding: 7px 14px;
             border-radius: 20px;
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 12px;
+            font-weight: 800;
             margin-bottom: 22px;
+            letter-spacing: 0.5px;
         }
 
         .hero h1 {
-            font-size: clamp(44px, 7vw, 72px);
-            line-height: 1.05;
+            font-size: clamp(45px, 7vw, 72px);
+            line-height: 1;
             color: #14213d;
             margin-bottom: 18px;
-            letter-spacing: -2px;
         }
 
         .hero h2 {
-            font-size: clamp(22px, 3vw, 32px);
+            font-size: clamp(22px, 3vw, 31px);
             color: #2563eb;
-            font-weight: 600;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .hero p {
@@ -123,10 +120,10 @@
             margin-bottom: 32px;
         }
 
-        .hero-buttons {
+        .buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 13px;
+            gap: 12px;
         }
 
         .button {
@@ -140,7 +137,7 @@
 
         .button-primary {
             background: #2563eb;
-            color: white;
+            color: #ffffff;
         }
 
         .button-primary:hover {
@@ -149,9 +146,9 @@
         }
 
         .button-secondary {
-            background: white;
+            background: #ffffff;
             color: #1e3a8a;
-            border: 1px solid #cdd8eb;
+            border: 1px solid #ccd7e8;
         }
 
         .button-secondary:hover {
@@ -159,13 +156,13 @@
             transform: translateY(-2px);
         }
 
-        /* GENERAL */
+        /* SECTIONS */
 
         section {
-            padding: 85px 24px;
+            padding: 80px 25px;
         }
 
-        .section-container {
+        .container {
             max-width: 1100px;
             margin: auto;
         }
@@ -187,57 +184,54 @@
 
         .section-description {
             color: #687386;
-            max-width: 700px;
-            margin-bottom: 40px;
+            max-width: 720px;
+            margin-bottom: 38px;
         }
 
         /* ABOUT */
 
         .about {
-            background: white;
+            background: #ffffff;
         }
 
         .about-grid {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
             gap: 50px;
-            align-items: start;
         }
 
         .about-text p {
             color: #566174;
             margin-bottom: 18px;
-            font-size: 16px;
         }
 
-        .career-box {
+        .interest-box {
             background: #f4f7fc;
             border: 1px solid #e1e7f0;
             border-radius: 14px;
-            padding: 26px;
+            padding: 27px;
         }
 
-        .career-box h3 {
+        .interest-box h3 {
             color: #14213d;
-            margin-bottom: 17px;
-            font-size: 19px;
+            margin-bottom: 15px;
         }
 
-        .career-list {
+        .interest-box ul {
             list-style: none;
         }
 
-        .career-list li {
+        .interest-box li {
+            color: #566174;
             padding: 9px 0;
-            color: #4d596c;
-            border-bottom: 1px solid #e2e7ef;
+            border-bottom: 1px solid #e0e6ef;
         }
 
-        .career-list li:last-child {
+        .interest-box li:last-child {
             border-bottom: none;
         }
 
-        .career-list li::before {
+        .interest-box li::before {
             content: "•";
             color: #2563eb;
             font-weight: bold;
@@ -247,7 +241,7 @@
         /* SKILLS */
 
         .skills {
-            background: #f7f9fc;
+            background: #f6f8fc;
         }
 
         .skills-grid {
@@ -257,22 +251,16 @@
         }
 
         .skill-card {
-            background: white;
-            border: 1px solid #e3e8f0;
+            background: #ffffff;
+            border: 1px solid #e1e7ef;
             border-radius: 14px;
             padding: 25px;
-            transition: 0.2s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(20, 33, 61, 0.07);
         }
 
         .skill-card h3 {
             color: #14213d;
+            margin-bottom: 10px;
             font-size: 17px;
-            margin-bottom: 12px;
         }
 
         .skill-card p {
@@ -283,7 +271,7 @@
         /* PROJECTS */
 
         .projects {
-            background: white;
+            background: #ffffff;
         }
 
         .project-grid {
@@ -297,64 +285,62 @@
             border-radius: 16px;
             padding: 30px;
             background: #ffffff;
-            display: flex;
-            flex-direction: column;
             transition: 0.2s;
         }
 
         .project-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 14px 30px rgba(20, 33, 61, 0.08);
+            box-shadow: 0 12px 30px rgba(20, 33, 61, 0.08);
         }
 
         .project-number {
             color: #2563eb;
+            font-size: 12px;
             font-weight: 800;
-            font-size: 13px;
-            margin-bottom: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
         }
 
         .project-card h3 {
             color: #14213d;
-            font-size: 22px;
-            margin-bottom: 8px;
+            font-size: 21px;
+            margin-bottom: 7px;
         }
 
-        .project-course {
+        .course {
             color: #687386;
             font-size: 14px;
             margin-bottom: 16px;
         }
 
-        .project-description {
+        .project-card p {
             color: #566174;
             font-size: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
-        .project-list {
+        .project-card ul {
             padding-left: 18px;
             color: #566174;
             font-size: 14px;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
 
-        .project-list li {
-            margin-bottom: 9px;
+        .project-card li {
+            margin-bottom: 8px;
         }
 
-        .tech-tags {
+        .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: auto;
+            gap: 7px;
         }
 
-        .tech-tag {
-            background: #eef3fb;
+        .tag {
+            background: #edf3fc;
             color: #31517f;
-            border-radius: 20px;
             padding: 6px 10px;
+            border-radius: 20px;
             font-size: 12px;
             font-weight: 700;
         }
@@ -362,11 +348,11 @@
         /* EDUCATION */
 
         .education {
-            background: #f7f9fc;
+            background: #f6f8fc;
         }
 
         .education-card {
-            background: white;
+            background: #ffffff;
             border: 1px solid #e1e7ef;
             border-radius: 14px;
             padding: 30px;
@@ -376,52 +362,42 @@
         .education-card h3 {
             color: #14213d;
             font-size: 22px;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
 
-        .education-card .degree {
+        .degree {
             color: #2563eb;
             font-weight: 700;
-            margin-bottom: 7px;
+            margin-bottom: 5px;
         }
 
         .education-card p {
             color: #687386;
         }
 
-        /* CAREER FAIR */
+        /* RESUME */
 
-        .career-fair {
+        .resume-section {
             background: #14213d;
-            color: white;
-        }
-
-        .career-fair-container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 75px 24px;
+            color: #ffffff;
             text-align: center;
         }
 
-        .career-fair h2 {
+        .resume-section h2 {
             font-size: 35px;
-            margin-bottom: 15px;
+            margin-bottom: 13px;
         }
 
-        .career-fair p {
-            color: #d8e0ee;
+        .resume-section p {
             max-width: 650px;
-            margin: 0 auto 28px;
-        }
-
-        .career-fair .button-secondary {
-            border: none;
+            margin: 0 auto 27px;
+            color: #d8e0ee;
         }
 
         /* CONTACT */
 
         .contact {
-            background: white;
+            background: #ffffff;
         }
 
         .contact-grid {
@@ -435,18 +411,12 @@
             border-radius: 13px;
             padding: 23px;
             text-align: center;
-            transition: 0.2s;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 22px rgba(20, 33, 61, 0.07);
         }
 
         .contact-card h3 {
             color: #14213d;
-            font-size: 16px;
             margin-bottom: 7px;
+            font-size: 16px;
         }
 
         .contact-card a {
@@ -461,17 +431,13 @@
             background: #0e1729;
             color: #aeb8c9;
             text-align: center;
-            padding: 25px 20px;
+            padding: 25px;
             font-size: 13px;
         }
 
         /* MOBILE */
 
         @media (max-width: 800px) {
-
-            .nav-container {
-                padding: 15px 18px;
-            }
 
             .nav-links {
                 display: none;
@@ -486,26 +452,18 @@
             }
 
             .about-grid,
-            .project-grid,
             .skills-grid,
+            .project-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
             }
 
-            .about-grid {
-                gap: 30px;
-            }
-
             .hero h1 {
-                letter-spacing: -1px;
+                font-size: 50px;
             }
 
             .section-title {
                 font-size: 29px;
-            }
-
-            .project-card {
-                padding: 25px;
             }
         }
     </style>
@@ -540,7 +498,7 @@
 
         <div class="hero-container">
 
-            <span class="hero-tag">
+            <span class="hero-label">
                 OPEN TO INTERNSHIP OPPORTUNITIES
             </span>
 
@@ -553,24 +511,25 @@
             </h2>
 
             <p>
-                Junior Information Systems student at Houston Christian University
-                with foundational experience in Python, SQL, MySQL, PHP, Excel,
-                Linux, databases, APIs, and Raspberry Pi projects.
+                Junior Information Systems student at Houston Christian
+                University interested in IT, data analytics, business
+                intelligence, software development, and technology.
             </p>
 
-            <div class="hero-buttons">
+            <div class="buttons">
 
                 <a
                     class="button button-primary"
                     href="#projects"
                 >
-                    View My Projects
+                    View Projects
                 </a>
 
                 <a
                     class="button button-secondary"
-                    href="Jayla-Wilson-HCU-Resume.pdf"
+                    href="Jayla-Wilson-HCU-resume.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     View Resume
                 </a>
@@ -595,7 +554,7 @@
 
     <section class="about" id="about">
 
-        <div class="section-container">
+        <div class="container">
 
             <div class="about-grid">
 
@@ -611,55 +570,40 @@
 
                     <p>
                         I am a junior Information Systems student at Houston
-                        Christian University interested in using technology and
-                        data to solve problems and improve business processes.
+                        Christian University interested in using technology
+                        and data to solve problems and improve business
+                        processes.
                     </p>
 
                     <p>
                         Through my coursework, I have developed foundational
-                        experience with Python, SQL, MySQL, PHP, Microsoft Excel,
-                        Linux, relational databases, APIs, and system troubleshooting.
+                        experience with Python, SQL, MySQL, PHP, Microsoft
+                        Excel, Linux, relational databases, APIs, and system
+                        troubleshooting.
                     </p>
 
                     <p>
-                        My academic projects have given me experience working with
-                        both software and hardware. I have contributed to a
-                        relational database project with a PHP web interface and
-                        a Raspberry Pi smart mirror using Python, speech recognition,
-                        APIs, sensors, and LED lighting.
+                        My academic projects have given me experience working
+                        with both software and hardware. I have worked with
+                        relational database design, PHP web development,
+                        Raspberry Pi, Python, speech recognition, APIs,
+                        sensors, and LED lighting.
                     </p>
 
                 </div>
 
-
-                <div class="career-box">
+                <div class="interest-box">
 
                     <h3>
                         Career Interests
                     </h3>
 
-                    <ul class="career-list">
-
-                        <li>
-                            Information Technology
-                        </li>
-
-                        <li>
-                            Data Analytics
-                        </li>
-
-                        <li>
-                            Business Intelligence
-                        </li>
-
-                        <li>
-                            Software Development
-                        </li>
-
-                        <li>
-                            Systems & Technology
-                        </li>
-
+                    <ul>
+                        <li>Information Technology</li>
+                        <li>Data Analytics</li>
+                        <li>Business Intelligence</li>
+                        <li>Software Development</li>
+                        <li>Systems & Technology</li>
                     </ul>
 
                 </div>
@@ -675,104 +619,66 @@
 
     <section class="skills" id="skills">
 
-        <div class="section-container">
+        <div class="container">
 
             <div class="section-label">
                 Technical Skills
             </div>
 
             <h2 class="section-title">
-                What I work with
+                Skills & Technologies
             </h2>
 
             <p class="section-description">
-                My current technical skills come primarily from coursework,
-                academic projects, and hands-on practice.
+                My current technical experience comes primarily from
+                coursework, academic projects, and hands-on practice.
             </p>
-
 
             <div class="skills-grid">
 
                 <div class="skill-card">
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <p>
-                        Python, PHP, SQL, Arduino
-                    </p>
-
+                    <h3>Programming</h3>
+                    <p>Python, PHP, SQL, Arduino</p>
                 </div>
 
-
                 <div class="skill-card">
-
-                    <h3>
-                        Database
-                    </h3>
-
+                    <h3>Database</h3>
                     <p>
                         MySQL, Relational Database Design,
                         ER Diagrams, Data Modeling
                     </p>
-
                 </div>
 
-
                 <div class="skill-card">
-
-                    <h3>
-                        Data & Analytics
-                    </h3>
-
+                    <h3>Data & Analytics</h3>
                     <p>
                         Microsoft Excel, Data Modeling,
                         Goal Seek, Advanced Formulas
                     </p>
-
                 </div>
 
-
                 <div class="skill-card">
-
-                    <h3>
-                        Systems & Hardware
-                    </h3>
-
+                    <h3>Systems & Hardware</h3>
                     <p>
                         Raspberry Pi, Linux, Ubuntu, Kali Linux,
                         Virtual Environments, Network Utilities
                     </p>
-
                 </div>
 
-
                 <div class="skill-card">
-
-                    <h3>
-                        Professional Skills
-                    </h3>
-
+                    <h3>Professional Skills</h3>
                     <p>
                         Problem Solving, Technical Documentation,
                         Process Optimization, Team Collaboration
                     </p>
-
                 </div>
 
-
                 <div class="skill-card">
-
-                    <h3>
-                        Currently Developing
-                    </h3>
-
+                    <h3>Technical Development</h3>
                     <p>
-                        Programming, SQL, data analysis,
-                        systems knowledge, and professional IT skills
+                        Continuing to develop programming, SQL,
+                        data analysis, and IT skills.
                     </p>
-
                 </div>
 
             </div>
@@ -786,26 +692,25 @@
 
     <section class="projects" id="projects">
 
-        <div class="section-container">
+        <div class="container">
 
             <div class="section-label">
                 Academic Projects
             </div>
 
             <h2 class="section-title">
-                Projects I've worked on
+                Projects
             </h2>
 
             <p class="section-description">
-                Selected academic projects demonstrating my experience with
-                databases, programming, APIs, hardware, and system development.
+                Academic projects demonstrating experience with databases,
+                programming, APIs, hardware, and system development.
             </p>
-
 
             <div class="project-grid">
 
 
-                <!-- PROJECT 1 -->
+                <!-- DATABASE PROJECT -->
 
                 <article class="project-card">
 
@@ -817,69 +722,49 @@
                         Delta University Student Registration System
                     </h3>
 
-                    <div class="project-course">
+                    <div class="course">
                         COSC 2355: Database Management Systems
                     </div>
 
-                    <p class="project-description">
-                        Team-based database project focused on designing and
-                        developing a relational student registration system.
+                    <p>
+                        Team-based project focused on designing and developing
+                        a relational student registration system.
                     </p>
 
-                    <ul class="project-list">
-
+                    <ul>
                         <li>
                             Collaborated with a team to design a relational
                             MySQL database and ER diagram.
                         </li>
 
                         <li>
-                            Worked with data representing students, courses,
-                            course sections, faculty, enrollments, and
-                            prerequisite relationships.
+                            Worked with students, courses, course sections,
+                            faculty, enrollments, and prerequisite relationships.
                         </li>
 
                         <li>
-                            Developed a PHP web interface that allows users
-                            to interact with and retrieve information from
-                            the MySQL database.
+                            Developed a PHP web interface for interacting
+                            with and retrieving information from the database.
                         </li>
 
                         <li>
-                            Worked with primary keys, foreign keys,
-                            entity relationships, and normalized tables.
+                            Worked with primary keys, foreign keys, entity
+                            relationships, and normalized tables.
                         </li>
-
                     </ul>
 
-                    <div class="tech-tags">
-
-                        <span class="tech-tag">
-                            MySQL
-                        </span>
-
-                        <span class="tech-tag">
-                            PHP
-                        </span>
-
-                        <span class="tech-tag">
-                            SQL
-                        </span>
-
-                        <span class="tech-tag">
-                            Database Design
-                        </span>
-
-                        <span class="tech-tag">
-                            ER Diagrams
-                        </span>
-
+                    <div class="tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Database Design</span>
+                        <span class="tag">ER Diagrams</span>
                     </div>
 
                 </article>
 
 
-                <!-- PROJECT 2 -->
+                <!-- SMART MIRROR -->
 
                 <article class="project-card">
 
@@ -891,17 +776,16 @@
                         TAJ REFLECTS Smart Mirror
                     </h3>
 
-                    <div class="project-course">
+                    <div class="course">
                         COSC 1352: Intermediate Computer Programming
                     </div>
 
-                    <p class="project-description">
-                        Team-based interactive smart mirror project built with
-                        Raspberry Pi and Python.
+                    <p>
+                        Team-based interactive smart mirror project built
+                        using Raspberry Pi 4 and Python.
                     </p>
 
-                    <ul class="project-list">
-
+                    <ul>
                         <li>
                             Developed an interactive smart mirror using
                             Raspberry Pi 4 and Python.
@@ -918,34 +802,17 @@
                         </li>
 
                         <li>
-                            Integrated API-based features to provide
-                            automated system responses.
+                            Integrated API-based features to automate
+                            system responses.
                         </li>
-
                     </ul>
 
-                    <div class="tech-tags">
-
-                        <span class="tech-tag">
-                            Python
-                        </span>
-
-                        <span class="tech-tag">
-                            Raspberry Pi 4
-                        </span>
-
-                        <span class="tech-tag">
-                            Speech Recognition
-                        </span>
-
-                        <span class="tech-tag">
-                            APIs
-                        </span>
-
-                        <span class="tech-tag">
-                            Hardware
-                        </span>
-
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Raspberry Pi 4</span>
+                        <span class="tag">Speech Recognition</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Hardware</span>
                     </div>
 
                 </article>
@@ -961,7 +828,7 @@
 
     <section class="education" id="education">
 
-        <div class="section-container">
+        <div class="container">
 
             <div class="section-label">
                 Education
@@ -996,28 +863,27 @@
     </section>
 
 
-    <!-- CAREER FAIR -->
+    <!-- RESUME -->
 
-    <section class="career-fair">
+    <section class="resume-section">
 
-        <div class="career-fair-container">
+        <div class="container">
 
             <h2>
-                Looking for my next opportunity
+                Interested in connecting?
             </h2>
 
             <p>
-                I am seeking an internship where I can apply my Information
-                Systems knowledge, strengthen my technical skills, and gain
-                professional experience working with technology, data, and
-                business systems.
+                I am looking for an internship where I can apply my
+                Information Systems knowledge, build my technical skills,
+                and gain professional experience.
             </p>
 
             <a
-               class="button button-secondary"
-               href="Jayla-Wilson-HBU-Resume.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
+                class="button button-secondary"
+                href="Jayla-Wilson-HCU-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 View My Resume
             </a>
@@ -1031,7 +897,7 @@
 
     <section class="contact" id="contact">
 
-        <div class="section-container">
+        <div class="container">
 
             <div class="section-label">
                 Contact
@@ -1042,19 +908,15 @@
             </h2>
 
             <p class="section-description">
-                Interested in connecting about internships, technology,
-                projects, or career opportunities? Feel free to reach out.
+                Feel free to connect with me about internships,
+                technology, projects, or career opportunities.
             </p>
-
 
             <div class="contact-grid">
 
-
                 <div class="contact-card">
 
-                    <h3>
-                        Email
-                    </h3>
+                    <h3>Email</h3>
 
                     <a href="mailto:jwilsona@hc.edu">
                         jwilsona@hc.edu
@@ -1065,9 +927,7 @@
 
                 <div class="contact-card">
 
-                    <h3>
-                        LinkedIn
-                    </h3>
+                    <h3>LinkedIn</h3>
 
                     <a
                         href="https://www.linkedin.com/in/jayla-wilson-444711334"
@@ -1082,9 +942,7 @@
 
                 <div class="contact-card">
 
-                    <h3>
-                        GitHub
-                    </h3>
+                    <h3>GitHub</h3>
 
                     <a
                         href="https://github.com/jaylawilson"
@@ -1108,7 +966,7 @@
     <footer>
 
         <p>
-            © 2026 Jayla Wilson. Information Systems Student.
+            © 2026 Jayla Wilson | Information Systems
         </p>
 
     </footer>
