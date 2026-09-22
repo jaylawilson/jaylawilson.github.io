@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayla Wilson | Information Systems</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f7f7;
+        }
+
+        nav {
+            background: #111;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button.secondary {
+            background: white;
+            color: #111;
+            border: 1px solid #111;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            background: #f1f1f1;
+        }
+
+        .about p {
+            max-width: 800px;
+            font-size: 17px;
+        }
+
+        .skills {
+            background: white;
+        }
+
+        .skill-group {
+            margin-bottom: 22px;
+        }
+
+        .skill-group h3 {
+            margin-bottom: 5px;
+        }
+
+        .projects {
+            background: #f1f1f1;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 28px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+
+        .resume {
+            background: white;
+            text-align: center;
+        }
+
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contact a {
+            color: white;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Jayla Wilson</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Jayla Wilson</h1>
+
+            <h2>Information Systems Student</h2>
+
+            <p>
+                Junior Information Systems student at Houston Christian University
+                interested in IT, data analytics, business intelligence, and
+                software development.
+            </p>
+
+            <div class="buttons">
+                <a class="button" href="#projects">View My Projects</a>
+                <a class="button secondary" href="#contact">Contact Me</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a junior Information Systems student at Houston Christian University
+            with foundational experience in Python, SQL, database design, data analysis,
+            programming, APIs, and system troubleshooting. Through academic team projects,
+            I have worked with relational databases, PHP, MySQL, Raspberry Pi, speech
+            recognition, sensors, and hardware integration.
+        </p>
+
+        <br>
+
+        <p>
+            I am currently seeking internship opportunities where I can apply my technical
+            skills, contribute to real-world projects, and continue developing professionally.
+        </p>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-group">
+            <h3>Programming</h3>
+            <p>Python, PHP, SQL, Arduino</p>
+        </div>
+
+        <div class="skill-group">
+            <h3>Database</h3>
+            <p>MySQL, Relational Database Design, ER Diagrams, Data Modeling</p>
+        </div>
+
+        <div class="skill-group">
+            <h3>Data & Analytics</h3>
+            <p>Microsoft Excel, Data Modeling, Goal Seek, Advanced Formulas</p>
+        </div>
+
+        <div class="skill-group">
+            <h3>Systems & Hardware</h3>
+            <p>Raspberry Pi, Linux, Ubuntu, Kali Linux, Virtual Environments, Network Utilities</p>
+        </div>
+
+        <div class="skill-group">
+            <h3>Professional</h3>
+            <p>Problem Solving, Technical Documentation, Process Optimization, Team Collaboration</p>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Delta University Student Registration System</h3>
+
+                <p class="project-tech">
+                    MySQL · PHP · SQL · Database Design
+                </p>
+
+                <p>
+                    Team-based student registration system developed for
+                    COSC 2355: Database Management Systems.
+                </p>
+
+                <ul>
+                    <li>Collaborated with a team to design a relational MySQL database and ER diagram.</li>
+                    <li>Developed a PHP web interface for interacting with the MySQL database.</li>
+                    <li>Worked with primary keys, foreign keys, entity relationships, and normalized tables.</li>
+                </ul>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>TAJ REFLECTS Smart Mirror</h3>
+
+                <p class="project-tech">
+                    Python · Raspberry Pi 4 · Speech Recognition · APIs
+                </p>
+
+                <p>
+                    Team-based interactive smart mirror developed for
+                    COSC 1352: Intermediate Computer Programming.
+                </p>
+
+                <ul>
+                    <li>Developed an interactive smart mirror using Raspberry Pi 4 and Python.</li>
+                    <li>Implemented offline speech recognition for voice-activated commands.</li>
+                    <li>Integrated PIR motion sensors, addressable LED lighting, and API-based features.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="resume" id="resume">
+
+        <h2>Resume</h2>
+
+        <p>
+            View my resume for additional information about my education,
+            skills, projects, and experience.
+        </p>
+
+        <br>
+
+        <a class="button" href="resume.pdf" target="_blank">
+            View Resume
+        </a>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>I'm currently seeking internship opportunities.</p>
+
+        <br>
+
+        <p>
+            Email:
+            <a href="mailto:jwilsona@hc.edu">
+                jwilsona@hc.edu
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/jayla-wilson-444711334" target="_blank">
+                linkedin.com/in/jayla-wilson-444711334
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/jaylawilson" target="_blank">
+                github.com/jaylawilson
+            </a>
+        </p>
+
+    </section>
+
+    <footer>
+        © 2026 Jayla Wilson
+    </footer>
+
+</body>
+</html>
