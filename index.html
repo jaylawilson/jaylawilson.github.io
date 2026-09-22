@@ -3,212 +3,509 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayla Wilson | Information Systems</title>
+
+    <title>Jayla Wilson | Information Systems Student</title>
+
+    <meta
+        name="description"
+        content="Jayla Wilson is an Information Systems student at Houston Christian University interested in IT, data analytics, business intelligence, and software development."
+    >
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        html {
+            box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #172033;
             line-height: 1.6;
-            color: #222;
-            background: #f7f7f7;
         }
 
+        a {
+            text-decoration: none;
+        }
+
+        /* NAVIGATION */
+
         nav {
-            background: #111;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #e5e9f0;
+            backdrop-filter: blur(10px);
         }
 
-        nav .logo {
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 24px;
             display: flex;
-            gap: 25px;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
+        .logo {
+            font-size: 21px;
+            font-weight: 700;
+            color: #14213d;
+            letter-spacing: 0.5px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
         }
+
+        .nav-links a {
+            color: #465268;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO */
 
         .hero {
-            min-height: 75vh;
+            background: linear-gradient(135deg, #eef4ff 0%, #ffffff 55%, #f5f8ff 100%);
+            min-height: 620px;
             display: flex;
             align-items: center;
-            padding: 80px 8%;
-            background: white;
         }
 
-        .hero-content {
-            max-width: 800px;
+        .hero-container {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            padding: 90px 24px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            padding: 7px 13px;
+            background: #e4edff;
+            color: #2457b8;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 22px;
         }
 
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 10px;
+            font-size: clamp(44px, 7vw, 72px);
+            line-height: 1.05;
+            color: #14213d;
+            margin-bottom: 18px;
+            letter-spacing: -2px;
         }
 
         .hero h2 {
-            font-size: 25px;
-            font-weight: normal;
+            font-size: clamp(22px, 3vw, 32px);
+            color: #2563eb;
+            font-weight: 600;
             margin-bottom: 20px;
         }
 
         .hero p {
+            max-width: 720px;
+            color: #596579;
             font-size: 18px;
-            max-width: 700px;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
-        .buttons {
+        .hero-buttons {
             display: flex;
-            gap: 15px;
             flex-wrap: wrap;
+            gap: 13px;
         }
 
         .button {
             display: inline-block;
-            padding: 12px 22px;
-            background: #111;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+            padding: 13px 21px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.2s;
         }
 
-        .button.secondary {
-            background: white;
-            color: #111;
-            border: 1px solid #111;
+        .button-primary {
+            background: #2563eb;
+            color: white;
         }
+
+        .button-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: white;
+            color: #1e3a8a;
+            border: 1px solid #cdd8eb;
+        }
+
+        .button-secondary:hover {
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* GENERAL */
 
         section {
-            padding: 70px 8%;
+            padding: 85px 24px;
         }
 
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
         }
+
+        .section-label {
+            color: #2563eb;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: #14213d;
+            margin-bottom: 16px;
+        }
+
+        .section-description {
+            color: #687386;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
 
         .about {
-            background: #f1f1f1;
-        }
-
-        .about p {
-            max-width: 800px;
-            font-size: 17px;
-        }
-
-        .skills {
             background: white;
         }
 
-        .skill-group {
-            margin-bottom: 22px;
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 50px;
+            align-items: start;
         }
 
-        .skill-group h3 {
-            margin-bottom: 5px;
+        .about-text p {
+            color: #566174;
+            margin-bottom: 18px;
+            font-size: 16px;
         }
+
+        .career-box {
+            background: #f4f7fc;
+            border: 1px solid #e1e7f0;
+            border-radius: 14px;
+            padding: 26px;
+        }
+
+        .career-box h3 {
+            color: #14213d;
+            margin-bottom: 17px;
+            font-size: 19px;
+        }
+
+        .career-list {
+            list-style: none;
+        }
+
+        .career-list li {
+            padding: 9px 0;
+            color: #4d596c;
+            border-bottom: 1px solid #e2e7ef;
+        }
+
+        .career-list li:last-child {
+            border-bottom: none;
+        }
+
+        .career-list li::before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            background: #f7f9fc;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            border: 1px solid #e3e8f0;
+            border-radius: 14px;
+            padding: 25px;
+            transition: 0.2s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(20, 33, 61, 0.07);
+        }
+
+        .skill-card h3 {
+            color: #14213d;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .skill-card p {
+            color: #657084;
+            font-size: 15px;
+        }
+
+        /* PROJECTS */
 
         .projects {
-            background: #f1f1f1;
+            background: white;
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
 
         .project-card {
-            background: white;
-            padding: 28px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border: 1px solid #e1e7ef;
+            border-radius: 16px;
+            padding: 30px;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            transition: 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(20, 33, 61, 0.08);
+        }
+
+        .project-number {
+            color: #2563eb;
+            font-weight: 800;
+            font-size: 13px;
+            margin-bottom: 12px;
         }
 
         .project-card h3 {
+            color: #14213d;
+            font-size: 22px;
             margin-bottom: 8px;
         }
 
-        .project-tech {
+        .project-course {
+            color: #687386;
             font-size: 14px;
-            margin-bottom: 15px;
-            font-weight: bold;
+            margin-bottom: 16px;
         }
 
-        .project-card ul {
-            padding-left: 20px;
-            margin-top: 15px;
+        .project-description {
+            color: #566174;
+            font-size: 15px;
+            margin-bottom: 20px;
         }
 
-        .resume {
+        .project-list {
+            padding-left: 18px;
+            color: #566174;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .project-list li {
+            margin-bottom: 9px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .tech-tag {
+            background: #eef3fb;
+            color: #31517f;
+            border-radius: 20px;
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* EDUCATION */
+
+        .education {
+            background: #f7f9fc;
+        }
+
+        .education-card {
             background: white;
+            border: 1px solid #e1e7ef;
+            border-radius: 14px;
+            padding: 30px;
+            max-width: 800px;
+        }
+
+        .education-card h3 {
+            color: #14213d;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .education-card .degree {
+            color: #2563eb;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .education-card p {
+            color: #687386;
+        }
+
+        /* CAREER FAIR */
+
+        .career-fair {
+            background: #14213d;
+            color: white;
+        }
+
+        .career-fair-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 24px;
             text-align: center;
         }
+
+        .career-fair h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .career-fair p {
+            color: #d8e0ee;
+            max-width: 650px;
+            margin: 0 auto 28px;
+        }
+
+        .career-fair .button-secondary {
+            border: none;
+        }
+
+        /* CONTACT */
 
         .contact {
-            background: #111;
-            color: white;
-            text-align: center;
+            background: white;
         }
 
-        .contact a {
-            color: white;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
         }
+
+        .contact-card {
+            border: 1px solid #e1e7ef;
+            border-radius: 13px;
+            padding: 23px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(20, 33, 61, 0.07);
+        }
+
+        .contact-card h3 {
+            color: #14213d;
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+
+        .contact-card a {
+            color: #2563eb;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        /* FOOTER */
 
         footer {
-            background: #111;
-            color: #aaa;
+            background: #0e1729;
+            color: #aeb8c9;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
+            padding: 25px 20px;
+            font-size: 13px;
         }
 
-        @media (max-width: 700px) {
-            nav {
-                flex-direction: column;
-                gap: 12px;
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-container {
+                padding: 15px 18px;
             }
 
-            nav ul {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container {
+                padding: 70px 22px;
+            }
+
+            section {
+                padding: 65px 22px;
+            }
+
+            .about-grid,
+            .project-grid,
+            .skills-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                gap: 30px;
             }
 
             .hero h1 {
-                font-size: 40px;
+                letter-spacing: -1px;
             }
 
-            .hero h2 {
-                font-size: 21px;
+            .section-title {
+                font-size: 29px;
+            }
+
+            .project-card {
+                padding: 25px;
             }
         }
     </style>
@@ -216,136 +513,442 @@
 
 <body>
 
-    <nav>
-        <div class="logo">Jayla Wilson</div>
+    <!-- NAVIGATION -->
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                JW
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
 
-            <h1>Jayla Wilson</h1>
+    <!-- HERO -->
 
-            <h2>Information Systems Student</h2>
+    <header class="hero">
+
+        <div class="hero-container">
+
+            <span class="hero-tag">
+                OPEN TO INTERNSHIP OPPORTUNITIES
+            </span>
+
+            <h1>
+                Jayla Wilson
+            </h1>
+
+            <h2>
+                Information Systems Student
+            </h2>
 
             <p>
                 Junior Information Systems student at Houston Christian University
-                interested in IT, data analytics, business intelligence, and
-                software development.
+                with foundational experience in Python, SQL, MySQL, PHP, Excel,
+                Linux, databases, APIs, and Raspberry Pi projects.
             </p>
 
-            <div class="buttons">
-                <a class="button" href="#projects">View My Projects</a>
-                <a class="button secondary" href="#contact">Contact Me</a>
+            <div class="hero-buttons">
+
+                <a
+                    class="button button-primary"
+                    href="#projects"
+                >
+                    View My Projects
+                </a>
+
+                <a
+                    class="button button-secondary"
+                    href="Jayla-Wilson-Resume.pdf"
+                    target="_blank"
+                >
+                    View Resume
+                </a>
+
+                <a
+                    class="button button-secondary"
+                    href="https://www.linkedin.com/in/jayla-wilson-444711334"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
             </div>
 
         </div>
-    </section>
+
+    </header>
+
+
+    <!-- ABOUT -->
 
     <section class="about" id="about">
 
-        <h2>About Me</h2>
+        <div class="section-container">
 
-        <p>
-            I am a junior Information Systems student at Houston Christian University
-            with foundational experience in Python, SQL, database design, data analysis,
-            programming, APIs, and system troubleshooting. Through academic team projects,
-            I have worked with relational databases, PHP, MySQL, Raspberry Pi, speech
-            recognition, sensors, and hardware integration.
-        </p>
+            <div class="about-grid">
 
-        <br>
+                <div class="about-text">
 
-        <p>
-            I am currently seeking internship opportunities where I can apply my technical
-            skills, contribute to real-world projects, and continue developing professionally.
-        </p>
+                    <div class="section-label">
+                        About Me
+                    </div>
+
+                    <h2 class="section-title">
+                        Technology, data, and problem solving
+                    </h2>
+
+                    <p>
+                        I am a junior Information Systems student at Houston
+                        Christian University interested in using technology and
+                        data to solve problems and improve business processes.
+                    </p>
+
+                    <p>
+                        Through my coursework, I have developed foundational
+                        experience with Python, SQL, MySQL, PHP, Microsoft Excel,
+                        Linux, relational databases, APIs, and system troubleshooting.
+                    </p>
+
+                    <p>
+                        My academic projects have given me experience working with
+                        both software and hardware. I have contributed to a
+                        relational database project with a PHP web interface and
+                        a Raspberry Pi smart mirror using Python, speech recognition,
+                        APIs, sensors, and LED lighting.
+                    </p>
+
+                </div>
+
+
+                <div class="career-box">
+
+                    <h3>
+                        Career Interests
+                    </h3>
+
+                    <ul class="career-list">
+
+                        <li>
+                            Information Technology
+                        </li>
+
+                        <li>
+                            Data Analytics
+                        </li>
+
+                        <li>
+                            Business Intelligence
+                        </li>
+
+                        <li>
+                            Software Development
+                        </li>
+
+                        <li>
+                            Systems & Technology
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
+
+
+    <!-- SKILLS -->
 
     <section class="skills" id="skills">
 
-        <h2>Technical Skills</h2>
+        <div class="section-container">
 
-        <div class="skill-group">
-            <h3>Programming</h3>
-            <p>Python, PHP, SQL, Arduino</p>
-        </div>
+            <div class="section-label">
+                Technical Skills
+            </div>
 
-        <div class="skill-group">
-            <h3>Database</h3>
-            <p>MySQL, Relational Database Design, ER Diagrams, Data Modeling</p>
-        </div>
+            <h2 class="section-title">
+                What I work with
+            </h2>
 
-        <div class="skill-group">
-            <h3>Data & Analytics</h3>
-            <p>Microsoft Excel, Data Modeling, Goal Seek, Advanced Formulas</p>
-        </div>
+            <p class="section-description">
+                My current technical skills come primarily from coursework,
+                academic projects, and hands-on practice.
+            </p>
 
-        <div class="skill-group">
-            <h3>Systems & Hardware</h3>
-            <p>Raspberry Pi, Linux, Ubuntu, Kali Linux, Virtual Environments, Network Utilities</p>
-        </div>
 
-        <div class="skill-group">
-            <h3>Professional</h3>
-            <p>Problem Solving, Technical Documentation, Process Optimization, Team Collaboration</p>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Python, PHP, SQL, Arduino
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <p>
+                        MySQL, Relational Database Design,
+                        ER Diagrams, Data Modeling
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Data & Analytics
+                    </h3>
+
+                    <p>
+                        Microsoft Excel, Data Modeling,
+                        Goal Seek, Advanced Formulas
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Systems & Hardware
+                    </h3>
+
+                    <p>
+                        Raspberry Pi, Linux, Ubuntu, Kali Linux,
+                        Virtual Environments, Network Utilities
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Professional Skills
+                    </h3>
+
+                    <p>
+                        Problem Solving, Technical Documentation,
+                        Process Optimization, Team Collaboration
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Currently Developing
+                    </h3>
+
+                    <p>
+                        Programming, SQL, data analysis,
+                        systems knowledge, and professional IT skills
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
+
+
+    <!-- PROJECTS -->
 
     <section class="projects" id="projects">
 
-        <h2>Projects</h2>
+        <div class="section-container">
 
-        <div class="project-grid">
-
-            <div class="project-card">
-
-                <h3>Delta University Student Registration System</h3>
-
-                <p class="project-tech">
-                    MySQL · PHP · SQL · Database Design
-                </p>
-
-                <p>
-                    Team-based student registration system developed for
-                    COSC 2355: Database Management Systems.
-                </p>
-
-                <ul>
-                    <li>Collaborated with a team to design a relational MySQL database and ER diagram.</li>
-                    <li>Developed a PHP web interface for interacting with the MySQL database.</li>
-                    <li>Worked with primary keys, foreign keys, entity relationships, and normalized tables.</li>
-                </ul>
-
+            <div class="section-label">
+                Academic Projects
             </div>
 
-            <div class="project-card">
+            <h2 class="section-title">
+                Projects I've worked on
+            </h2>
 
-                <h3>TAJ REFLECTS Smart Mirror</h3>
+            <p class="section-description">
+                Selected academic projects demonstrating my experience with
+                databases, programming, APIs, hardware, and system development.
+            </p>
 
-                <p class="project-tech">
-                    Python · Raspberry Pi 4 · Speech Recognition · APIs
-                </p>
 
-                <p>
-                    Team-based interactive smart mirror developed for
-                    COSC 1352: Intermediate Computer Programming.
-                </p>
+            <div class="project-grid">
 
-                <ul>
-                    <li>Developed an interactive smart mirror using Raspberry Pi 4 and Python.</li>
-                    <li>Implemented offline speech recognition for voice-activated commands.</li>
-                    <li>Integrated PIR motion sensors, addressable LED lighting, and API-based features.</li>
-                </ul>
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        PROJECT 01
+                    </div>
+
+                    <h3>
+                        Delta University Student Registration System
+                    </h3>
+
+                    <div class="project-course">
+                        COSC 2355: Database Management Systems
+                    </div>
+
+                    <p class="project-description">
+                        Team-based database project focused on designing and
+                        developing a relational student registration system.
+                    </p>
+
+                    <ul class="project-list">
+
+                        <li>
+                            Collaborated with a team to design a relational
+                            MySQL database and ER diagram.
+                        </li>
+
+                        <li>
+                            Worked with data representing students, courses,
+                            course sections, faculty, enrollments, and
+                            prerequisite relationships.
+                        </li>
+
+                        <li>
+                            Developed a PHP web interface that allows users
+                            to interact with and retrieve information from
+                            the MySQL database.
+                        </li>
+
+                        <li>
+                            Worked with primary keys, foreign keys,
+                            entity relationships, and normalized tables.
+                        </li>
+
+                    </ul>
+
+                    <div class="tech-tags">
+
+                        <span class="tech-tag">
+                            MySQL
+                        </span>
+
+                        <span class="tech-tag">
+                            PHP
+                        </span>
+
+                        <span class="tech-tag">
+                            SQL
+                        </span>
+
+                        <span class="tech-tag">
+                            Database Design
+                        </span>
+
+                        <span class="tech-tag">
+                            ER Diagrams
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        PROJECT 02
+                    </div>
+
+                    <h3>
+                        TAJ REFLECTS Smart Mirror
+                    </h3>
+
+                    <div class="project-course">
+                        COSC 1352: Intermediate Computer Programming
+                    </div>
+
+                    <p class="project-description">
+                        Team-based interactive smart mirror project built with
+                        Raspberry Pi and Python.
+                    </p>
+
+                    <ul class="project-list">
+
+                        <li>
+                            Developed an interactive smart mirror using
+                            Raspberry Pi 4 and Python.
+                        </li>
+
+                        <li>
+                            Implemented offline speech recognition for
+                            voice-activated commands and system controls.
+                        </li>
+
+                        <li>
+                            Integrated PIR motion sensors and addressable
+                            LED lighting.
+                        </li>
+
+                        <li>
+                            Integrated API-based features to provide
+                            automated system responses.
+                        </li>
+
+                    </ul>
+
+                    <div class="tech-tags">
+
+                        <span class="tech-tag">
+                            Python
+                        </span>
+
+                        <span class="tech-tag">
+                            Raspberry Pi 4
+                        </span>
+
+                        <span class="tech-tag">
+                            Speech Recognition
+                        </span>
+
+                        <span class="tech-tag">
+                            APIs
+                        </span>
+
+                        <span class="tech-tag">
+                            Hardware
+                        </span>
+
+                    </div>
+
+                </article>
 
             </div>
 
@@ -353,56 +956,160 @@
 
     </section>
 
-    <section class="resume" id="resume">
 
-        <h2>Resume</h2>
+    <!-- EDUCATION -->
 
-        <p>
-            View my resume for additional information about my education,
-            skills, projects, and experience.
-        </p>
+    <section class="education" id="education">
 
-        <br>
+        <div class="section-container">
 
-        <a class="button" href="Jayla-Wilson-Resume.pdf" target="_blank">
-            View Resume
-        </a>
+            <div class="section-label">
+                Education
+            </div>
+
+            <h2 class="section-title">
+                Academic Background
+            </h2>
+
+            <div class="education-card">
+
+                <h3>
+                    Houston Christian University
+                </h3>
+
+                <div class="degree">
+                    Bachelor of Science in Information Systems
+                </div>
+
+                <p>
+                    Houston, Texas
+                </p>
+
+                <p>
+                    Expected Graduation: May 2028
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
+
+
+    <!-- CAREER FAIR -->
+
+    <section class="career-fair">
+
+        <div class="career-fair-container">
+
+            <h2>
+                Looking for my next opportunity
+            </h2>
+
+            <p>
+                I am seeking an internship where I can apply my Information
+                Systems knowledge, strengthen my technical skills, and gain
+                professional experience working with technology, data, and
+                business systems.
+            </p>
+
+            <a
+                class="button button-secondary"
+                href="Jayla-Wilson-Resume.pdf"
+                target="_blank"
+            >
+                View My Resume
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
 
     <section class="contact" id="contact">
 
-        <h2>Let's Connect</h2>
+        <div class="section-container">
 
-        <p>I'm currently seeking internship opportunities.</p>
+            <div class="section-label">
+                Contact
+            </div>
 
-        <br>
+            <h2 class="section-title">
+                Let's connect
+            </h2>
 
-        <p>
-            Email:
-            <a href="mailto:jwilsona@hc.edu">
-                jwilsona@hc.edu
-            </a>
-        </p>
+            <p class="section-description">
+                Interested in connecting about internships, technology,
+                projects, or career opportunities? Feel free to reach out.
+            </p>
 
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/jayla-wilson-444711334" target="_blank">
-                linkedin.com/in/jayla-wilson-444711334
-            </a>
-        </p>
 
-        <p>
-            GitHub:
-            <a href="https://github.com/jaylawilson" target="_blank">
-                github.com/jaylawilson
-            </a>
-        </p>
+            <div class="contact-grid">
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <a href="mailto:jwilsona@hc.edu">
+                        jwilsona@hc.edu
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        LinkedIn
+                    </h3>
+
+                    <a
+                        href="https://www.linkedin.com/in/jayla-wilson-444711334"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View LinkedIn
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        GitHub
+                    </h3>
+
+                    <a
+                        href="https://github.com/jaylawilson"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
+
+    <!-- FOOTER -->
+
     <footer>
-        © 2026 Jayla Wilson
+
+        <p>
+            © 2026 Jayla Wilson. Information Systems Student.
+        </p>
+
     </footer>
 
 </body>
